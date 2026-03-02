@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deadlock Legends</title>
     <style>
-        /* Настройки фона всей страницы */
         body {
             margin: 0;
             padding: 0;
@@ -17,7 +16,6 @@
             justify-content: center;
         }
 
-        /* Основной контейнер */
         .container {
             display: flex;
             flex-direction: column;
@@ -25,23 +23,21 @@
             gap: 40px;
             padding: 50px 20px;
             width: 100%;
-            background: rgba(0, 0, 0, 0.3); /* Легкое затемнение поверх фона */
+            background: rgba(0, 0, 0, 0.3);
             min-height: 100vh;
         }
 
-        /* Общие стили для каждого из трех отсеков */
         .section {
             width: 100%;
-            max-width: 720px; /* Оптимально для картинок шириной 652px */
+            max-width: 720px;
             background: rgba(15, 15, 15, 0.9);
-            border: 2px solid #edb65c; /* Золотая рамка в стиле игры */
+            border: 2px solid #edb65c;
             border-radius: 12px;
             padding: 25px;
             box-shadow: 0 15px 35px rgba(0,0,0,0.8);
             backdrop-filter: blur(10px);
         }
 
-        /* Заголовки секций */
         .section-header {
             text-align: center;
             margin-bottom: 20px;
@@ -50,7 +46,7 @@
         }
 
         .section-header img {
-            max-height: 70px; /* Размер PNG-логотипа в первой секции */
+            max-height: 70px;
             object-fit: contain;
         }
 
@@ -63,26 +59,23 @@
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
 
-        /* Список картинок - строго в колонку */
         .gallery {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 12px; /* Расстояние между картинками */
+            gap: 12px;
         }
 
-        /* Стили для твоих картинок 652x42 */
         .hero-strip {
             width: 652px;
             height: 42px;
             display: block;
-            object-fit: fill; /* Гарантирует, что картинка видна полностью без обрезки */
+            object-fit: fill;
             border: 1px solid #333;
             border-radius: 4px;
             transition: all 0.2s ease-in-out;
         }
 
-        /* Эффект при наведении */
         .hero-strip:hover {
             transform: scale(1.02);
             border-color: #edb65c;
@@ -90,10 +83,9 @@
             cursor: pointer;
         }
 
-        /* Адаптация под мобильные устройства */
         @media (max-width: 700px) {
             .hero-strip {
-                width: 100%; /* На смартфонах картинка сузится по ширине экрана */
+                width: 100%;
                 height: auto;
             }
             .section {
@@ -113,6 +105,9 @@
             <div class="gallery">
                 <img src="hero1.png" alt="Hero 1" class="hero-strip">
                 <img src="hero2.png" alt="Hero 2" class="hero-strip">
+                <img src="hero3.png" alt="Hero 3" class="hero-strip">
+                <img src="hero4.png" alt="Hero 4" class="hero-strip">
+                <img src="hero5.png" alt="Hero 5" class="hero-strip">
             </div>
         </section>
 
@@ -141,3 +136,4 @@
 
 </body>
 </html>
+
