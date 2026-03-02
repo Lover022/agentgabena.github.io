@@ -28,7 +28,7 @@
         }
 
         .section {
-            position: relative
+            position: relative;
             width: 100%;
             max-width: 720px;
             background: rgba(15, 15, 15, 0.9);
@@ -84,14 +84,6 @@
             box-shadow: 0 0 15px rgba(237, 182, 92, 0.4);
             cursor: pointer;
         }
-
-        @media (max-width: 700px) {
-            .hero-strip {
-                width: 100%;
-                height: auto;
-            }
-            .section {
-                padding: 15px;
                 .legend-frame::before {
                     content: "";
                     position: absolute;
@@ -107,6 +99,14 @@
                 .legend-frame .hero-strip {
                     position: relative;
                     z-index: 5;
+                }
+        @media (max-width: 700px) {
+            .hero-strip {
+                width: 100%;
+                height: auto;
+            }
+            .section {
+                padding: 15px;
                 }
         }
     </style>
@@ -152,5 +152,6 @@
 
 </body>
 </html>
+
 
 
