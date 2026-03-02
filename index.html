@@ -85,27 +85,32 @@
             cursor: pointer;
         }
         .legend-frame {
-            padding: 40px 30px !important;
-            min-height: 450px;
+            padding: 100px 120px !important;
+            width: 100%;
+            max-width: 950px;
+            min-height: auto;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            box-sizing: border-box;
         }
                 .legend-frame::before {
                     content: "";
                     position: absolute;
-                    top: -20px;
-                    left: -20px;
-                    right: -20px;
-                    bottom: -20px;
+                    top: -10px;
+                    left: -30px;
+                    right: -30px;
+                    bottom: -10px;
                     background: url('fire_frame.png') no-repeat;
                     background-size: 100% 100%;
                     pointer-events: none;
                     z-index: 10;
                 }
                 .legend-frame .hero-strip {
+                    width: 100;
+                    max-width: 652px;
                     position: relative;
-                    z-index: 5;
+                    z-index: 11;
                 }
         @media (max-width: 700px) {
             .hero-strip {
@@ -159,6 +164,7 @@
 
 </body>
 </html>
+
 
 
 
